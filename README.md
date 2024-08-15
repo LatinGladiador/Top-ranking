@@ -4,8 +4,6 @@
 ![Estado del Proyecto](https://img.shields.io/badge/estado-finalizado-green.svg)
 ![Versión](https://img.shields.io/badge/versión-1.0.0-brightgreen.svg)
 
-![Logo del Proyecto](https://user-images.githubusercontent.com/121910576/257302088-d2a9edb6-75e5-4118-aaba-6f53da7715dc.png)
-
 Este es un proyecto en Java para gestionar una tabla de clasificación (leaderboard) de jugadores basada en sus puntajes. El sistema lee una lista de jugadores y sus puntajes, ordena a los jugadores por puntaje de manera descendente y muestra los primeros `K` jugadores en la tabla.
 
 ## 📋 Descripción
