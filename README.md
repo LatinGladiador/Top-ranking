@@ -1,62 +1,94 @@
-## Top ranking
+# Leaderboard System
 
-- **Time limit per test:** 5 seconds
-- **Memory limit per test:** 256 megabytes
-- **Input:** standard input
-- **Output:** standard output
+![Licencia MIT](https://img.shields.io/badge/licencia-MIT-blue.svg)
+![Estado del Proyecto](https://img.shields.io/badge/estado-finalizado-green.svg)
+![Versión](https://img.shields.io/badge/versión-1.0.0-brightgreen.svg)
 
-You are given an unsorted list of players with their scores in a video game. Build a highscore leadership table.
+![Logo del Proyecto](https://user-images.githubusercontent.com/121910576/257302088-d2a9edb6-75e5-4118-aaba-6f53da7715dc.png)
 
-You must implement the main algorithm as a separate function and invoke it from `main()`. The main algorithm should take an input array and the maximum size of the leadership table. The algorithm should then return a new array with top rankings. More generic implementations are welcome.
+Este es un proyecto en Java para gestionar una tabla de clasificación (leaderboard) de jugadores basada en sus puntajes. El sistema lee una lista de jugadores y sus puntajes, ordena a los jugadores por puntaje de manera descendente y muestra los primeros `K` jugadores en la tabla.
 
-### Input
+## 📋 Descripción
 
-First line contains a number of entries N (0 ≤ N ≤ 10^6) and the maximum size of the leadership table K (1 ≤ K ≤ 100). Each of the next N lines has the format `<PLAYER> <SCORE>`, where:
+El **Leaderboard System** permite ingresar una lista de jugadores junto con sus puntajes y muestra los primeros `K` jugadores con las puntuaciones más altas. El sistema utiliza la clase `Player` para representar a cada jugador y ordena los jugadores en función de sus puntajes.
 
-- `<PLAYER>` is a single word consisting of alphanumeric symbols (a-z and A-Z), numbers (0-9), and an underscore (_);
-- `<SCORE>` is a non-negative integer, up to 2^20.
+## 🛠️ Tecnologías Utilizadas
 
-### Output
+- **Java**: Lenguaje de programación utilizado para implementar la lógica del sistema.
+- **Scanner**: Para leer la entrada del usuario.
+- **Arrays**: Para manejar y ordenar la lista de jugadores.
 
-The output must contain K lines, each of which contains a `<PLAYER> <SCORE>` line. The lines in the output must be sorted according to descending score.
+## 🏗️ Instalación
 
-#### Examples
+Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
-**Input:**
-6 3
-Luffgirl 123
-Cut3_Sugarr 234
-Sw33t_Sparrow 789
-Th3_Inn3r_Thing 678
-3tiolat3 456
-Luciform 567
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/LatinGladiador/Top-ranking.git
+   ```
 
-**Output:**
-Sw33t_Sparrow 789
-Th3_Inn3r_Thing 678
-Luciform 567
+2. **Navega al directorio del proyecto**:
+   ```bash
+   cd Top-ranking
+   ```
 
-**Input:**
-10 53
-Cooki3_Ang3l102 152608
-Posirippl397 694042
-Aw3som3_Chocolat375 700664
-Mind_Light94 544794
-Apropos43 524660
-Import3d_S3ns363 321758
-Lov3stump107 116993
-Star_B3lt99 868279
-3tiolat33 140524
-Cooki3_Ang3l105 294102
+3. **Compila y ejecuta el archivo Java**:
+   ```bash
+   javac Main.java
+   java Main
+   ```
 
-**Output:**
-Star_B3lt99 868279
-Aw3som3_Chocolat375 700664
-Posirippl397 694042
-Mind_Light94 544794
-Apropos43 524660
-Import3d_S3ns363 321758
-Cooki3_Ang3l105 294102
-Cooki3_Ang3l102 152608
-3tiolat33 140524
-Lov3stump107 116993
+## 🖥️ Uso
+
+1. **Inicia el programa**.
+2. **Introduce el número de entradas** y el tamaño máximo de la tabla de clasificación.
+3. **Ingresa los nombres y puntajes de los jugadores**.
+
+   Ejemplo de entrada:
+   ```
+   5 3
+   Alice 1500
+   Bob 2000
+   Charlie 1800
+   Dave 1700
+   Eve 1600
+   ```
+
+   Ejemplo de salida:
+   ```
+   Bob 2000
+   Charlie 1800
+   Dave 1700
+   ```
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas contribuir, sigue estos pasos:
+
+1. **Haz un fork del repositorio**.
+2. **Crea una nueva rama** para tus cambios:
+   ```bash
+   git checkout -b feature/nueva-caracteristica
+   ```
+3. **Realiza tus cambios y haz commit**:
+   ```bash
+   git commit -m "Añadida nueva característica"
+   ```
+4. **Empuja tu rama**:
+   ```bash
+   git push origin feature/nueva-caracteristica
+   ```
+5. **Abre un Pull Request** en GitHub.
+
+## 👤 Autor
+
+Este proyecto fue creado y es mantenido por [LatinGladiador](https://github.com/LatinGladiador).
+
+
+## 📜 Licencia
+
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
+
+---
+
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
